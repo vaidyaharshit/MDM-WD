@@ -1,0 +1,13 @@
+<html>
+    <header>
+        Demo practical
+    </header>
+    <main>
+        welcome
+<label>for="file">progress:</label>
+        <progress id="file" max="200" value="150" >150%</progress>
+    </main>
+    <footer>
+        bye bye
+    </footer>
+    </html>
