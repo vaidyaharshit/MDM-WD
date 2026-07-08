@@ -1,13 +1,108 @@
 <html>
     <header>
-        Demo practical
+        Login page
     </header>
     <main>
-        welcome
-<label>for="file">progress:</label>
-        <progress id="file" max="200" value="150" >150%</progress>
+        <label for="name">Enter your name:</label>
+
+<input
+  type="text"
+  id="name"
+  name="name"
+  required
+  minlength="4"
+  maxlength="8"
+  size="10" />
+  <button class="favorite styled" type="button">Submit</button>
+
+        <p><label>progress:</label>
+            <progress id="file" max="200" value="150" >150%</progress></p>
     </main>
+    <style>.fit-picture {
+        width: 250px;
+      }</style>
+    <img
+      
+  class="fit-picture"
+  src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+  alt="ostrich">
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+
+
     <footer>
         bye bye
     </footer>
+    <style>th,
+        td {
+          border: 1px solid rgb(160 160 160);
+          padding: 8px 10px;
+        }
+        
+        th[scope="col"] {
+          background-color: #505050;
+          color: white;
+        }
+        
+        th[scope="row"] {
+          background-color: #d6ecd4;
+        }
+        
+        td {
+          text-align: center;
+        }
+        
+        tr:nth-of-type(even) {
+          background-color: #eeeeee;
+        }
+        
+        table {
+          border-collapse: collapse;
+          border: 2px solid rgb(140 140 140);
+          font-family: sans-serif;
+          font-size: 0.8rem;
+          letter-spacing: 1px;
+        }
+        
+        caption {
+          caption-side: bottom;
+          padding: 10px;
+        }
+        </style>
+    <table>
+        <caption>
+         
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">time</th>
+            <th scope="col">break</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">monday</th>
+            <td>1-2</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th scope="row">Tuesday</th>
+            <td>3-4</td>
+            <td>no</td>
+          </tr>
+          <tr>
+            <th scope="row">Saturday</th>
+            <td>5-6</td>
+            <td>no</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    <body>
+        <header>
+          TO chaliye shuru krte hai
+        </header>
+        
+    </body>
     </html>
