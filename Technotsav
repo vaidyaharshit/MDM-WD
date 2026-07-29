@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHFEST 2026 | Invitation</title>
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+    background:#020617;
+}
+
+/* Animated Gradient */
+.bg-animation{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(-45deg,#020617,#0f172a,#1e3a8a,#312e81,#0f766e,#0ea5e9);
+    background-size:400% 400%;
+    animation:gradient 18s ease infinite;
+    z-index:-5;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Grid Background */
+.grid-bg{
+position:fixed;
+inset:0;
+background-image:
+linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+background-size:40px 40px;
+z-index:-4;
+}
+
+/* Glowing Orbs */
+.glow1,.glow2,.glow3{
+position:fixed;
+border-radius:50%;
+filter:blur(100px);
+animation:pulse 6s infinite alternate;
+z-index:-3;
+}
+
+.glow1{
+width:300px;
+height:300px;
+background:#06b6d4;
+top:0;
+left:0;
+}
+
+.glow2{
+width:350px;
+height:350px;
+background:#3b82f6;
+bottom:0;
+right:0;
+}
+
+.glow3{
+width:250px;
+height:250px;
+background:#14b8a6;
+top:50%;
+left:40%;
+}
+
+@keyframes pulse{
+from{opacity:.2;transform:scale(1);}
+to{opacity:.5;transform:scale(1.2);}
+}
+
+/* Floating Icons */
+.icon{
+position:absolute;
+font-size:28px;
+animation:float 8s ease-in-out infinite;
+opacity:.6;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-25px);}
+100%{transform:translateY(0px);}
+}
+
+/* Hero Animation */
+.hero{
+animation:fade 1.2s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+
+</head>
+
+<body class="text-white">
+
+<div class="bg-animation"></div>
+<div class="grid-bg"></div>
+
+<div class="glow1"></div>
+<div class="glow2"></div>
+<div class="glow3"></div>
+
+<!-- Floating Tech Icons -->
+
+<div class="icon top-10 left-16">💻</div>
+<div class="icon top-40 right-24">🤖</div>
+<div class="icon top-80 left-24">⚙️</div>
+<div class="icon bottom-40 right-16">🛰️</div>
+<div class="icon bottom-24 left-20">☁️</div>
+<div class="icon top-1/2 right-1/3">🧠</div>
+
+<section class="min-h-screen flex items-center justify-center px-5 py-12">
+
+<div class="max-w-7xl w-full bg-white/10 backdrop-blur-xl rounded-3xl border border-cyan-400 shadow-2xl overflow-hidden hero">
+
+<div class="grid lg:grid-cols-2">
+
+<!-- LEFT -->
+
+<div class="p-10 lg:p-16">
+
+<span class="inline-block bg-cyan-500 px-5 py-2 rounded-full text-sm font-bold shadow-lg">
+🚀 TECHNOTSAV 2026
+</span>
+
+<h1 class="text-6xl lg:text-7xl font-extrabold mt-8 leading-tight">
+
+WELCOME TO
+
+<span class="text-cyan-400 block">
+TECHFEST 2026
+</span>
+
+</h1>
+
+<p class="mt-8 text-lg text-gray-200 leading-9">
+
+Step into the future of technology where innovation meets creativity.
+
+Experience Artificial Intelligence, Robotics, Cyber Security, Coding,
+Hackathons, Gaming Battles, IoT Projects, Startup Ideas,
+and exciting technical competitions.
+
+Discover.
+Learn.
+Compete.
+Innovate.
+Win.
+
+Your next big opportunity begins here!
+
+</p>
+
+<!-- Invitation -->
+
+<div class="mt-10 bg-white/10 border border-cyan-400 rounded-2xl p-7 shadow-xl">
+
+<h2 class="text-3xl font-bold text-cyan-300 mb-5">
+✨ YOU ARE INVITED ✨
+</h2>
+
+<p class="leading-8 text-gray-200">
+
+The Department of Computer Science(AI&ML) warmly invites all
+students and respected faculty members to participate in the Annual
+Technical Festival.
+
+Join us for a day full of inspiration, innovation, collaboration,
+learning, competitions, networking, and unforgettable experiences.
+
+Come showcase your talent.
+
+</p>
+
+</div>
+
+<!-- Event Info -->
+
+<div class="grid grid-cols-2 gap-5 mt-10">
+
+<div class="bg-white/10 p-5 rounded-xl border border-cyan-400">
+<h3 class="font-bold text-cyan-300">📅 Date</h3>
+<p class="mt-2">15 September 2026</p>
+</div>
+
+<div class="bg-white/10 p-5 rounded-xl border border-cyan-400">
+<h3 class="font-bold text-cyan-300">⏰ Time</h3>
+<p class="mt-2">10:00AM to 5:00PM</p>
+</div>
+
+<div class="bg-white/10 p-5 rounded-xl border border-cyan-400">
+<h3 class="font-bold text-cyan-300">📍 Venue</h3>
+<p class="mt-2">CSE(AIML) Auditorium 3rd floor</p>
+</div>
+
+<div class="bg-white/10 p-5 rounded-xl border border-cyan-400">
+<h3 class="font-bold text-cyan-300">🎟 Entry</h3>
+<p class="mt-2">FREE FREE FREE and FREE FOR ALL</p>
+</div>
+
+</div>
+
+<!-- Buttons -->
+
+<div class="mt-10 flex flex-wrap gap-5">
+
+<button class="bg-cyan-500 hover:bg-cyan-400 hover:scale-110 transition duration-300 px-8 py-4 rounded-xl font-bold shadow-xl">
+
+🚀 Register Now
+
+</button>
+
+<a href="#schedule"
+class="border-2 border-cyan-400 hover:bg-cyan-400 hover:text-black hover:scale-110 transition duration-300 px-8 py-4 rounded-xl font-bold inline-block">
+    📅 View Schedule
+</a>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="bg-gradient-to-br from-cyan-600 via-blue-700 to-indigo-800 p-10 lg:p-14 flex flex-col justify-center">
+
+<div class="text-center">
+
+<div class="text-8xl mb-5 animate-bounce">
+🤖
+</div>
+
+<h2 class="text-5xl font-bold">
+JOIN THE
+</h2>
+
+<h2 class="text-5xl font-extrabold text-cyan-200 mt-2">
+INNOVATION
+</h2>
+
+<h2 class="text-5xl font-bold mt-2">
+REVOLUTION
+</h2>
+
+<p class="mt-8 text-lg leading-8">
+
+Meet brilliant innovators.
+
+Learn from experts.
+
+Build amazing projects.
+
+Win exciting prizes.
+
+Create memories that last forever.
+
+</p>
+
+</div>
+
+<div class="mt-12 space-y-5">
+
+<div class="bg-white/20 rounded-xl p-5 hover:scale-105 transition">
+🤖 Seminar on Artificial Intelligence & Machine Learning
+</div>
+
+<div class="bg-white/20 rounded-xl p-5 hover:scale-105 transition">
+💻 National Level Hackathon
+</div>
+
+<div class="bg-white/20 rounded-xl p-5 hover:scale-105 transition">
+⚙ Robo Race
+</div>
+
+<div class="bg-white/20 rounded-xl p-5 hover:scale-105 transition">
+🛡 Code for Cyber Security Challenge
+</div>
+
+<div class="bg-white/20 rounded-xl p-5 hover:scale-105 transition">
+🎮 Gaming Arena (Free Fire and PUBG)
+</div>
+
+<div class="bg-white/20 rounded-xl p-5 hover:scale-105 transition">
+💡 Industry experts seminar for Startups and Innovations
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Highlights -->
+
+<section id="schedule" class="max-w-6xl mx-auto px-6 py-20">
+
+<h2 class="text-5xl font-bold text-center mb-12">
+
+⭐ EVENT HIGHLIGHTS ⭐
+
+</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<div class="bg-white/10 p-8 rounded-2xl border border-cyan-400 hover:scale-105 transition">
+<h3 class="text-2xl font-bold">💻 Coding Contest</h3>
+<p class="mt-4 text-gray-300">
+Compete with the brightest minds and solve real-world coding challenges.
+</p>
+</div>
+
+<div class="bg-white/10 p-8 rounded-2xl border border-cyan-400 hover:scale-105 transition">
+<h3 class="text-2xl font-bold">🤖 AI Workshop</h3>
+<p class="mt-4 text-gray-300">
+Explore Machine Learning, Generative AI, and future technologies.
+</p>
+</div>
+
+<div class="bg-white/10 p-8 rounded-2xl border border-cyan-400 hover:scale-105 transition">
+<h3 class="text-2xl font-bold">⚙ Robotics</h3>
+<p class="mt-4 text-gray-300">
+Build, control, and compete with innovative robots.
+</p>
+</div>
+
+<div class="bg-white/10 p-8 rounded-2xl border border-cyan-400 hover:scale-105 transition">
+<h3 class="text-2xl font-bold">🛡 Cyber Security</h3>
+<p class="mt-4 text-gray-300">
+Ethical hacking and Capture-The-Flag competitions.
+</p>
+</div>
+
+<div class="bg-white/10 p-8 rounded-2xl border border-cyan-400 hover:scale-105 transition">
+<h3 class="text-2xl font-bold">🎮 Gaming</h3>
+<p class="mt-4 text-gray-300">
+Battle with the best gamers and win exciting rewards.
+</p>
+</div>
+
+<div class="bg-white/10 p-8 rounded-2xl border border-cyan-400 hover:scale-105 transition">
+<h3 class="text-2xl font-bold">🏆 Project Expo</h3>
+<p class="mt-4 text-gray-300">
+Showcase your innovative projects and startup ideas.
+</p>
+</div>
+
+</div>
+
+</section>
+<!-- EVENT ROADMAP -->
+
+<section class="max-w-6xl mx-auto px-6 py-20">
+
+    <h2 class="text-5xl font-bold text-center mb-4">
+        📅 Event Schedule
+    </h2>
+
+    <p class="text-center text-gray-300 mb-16">
+        Your journey through TechFest 2026
+    </p>
+
+    <div class="relative">
+
+        <!-- Center Line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cyan-400 rounded-full"></div>
+
+        <!-- Event 1 -->
+        <div class="mb-16 flex justify-between items-center w-full">
+
+            <div class="w-5/12 text-right">
+                <div class="bg-white/10 border border-cyan-400 rounded-2xl p-6 hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold text-cyan-300">🎉 Opening Ceremony</h3>
+                    <p class="mt-2 text-gray-300">Welcome Address & Lamp Lighting</p>
+                    <p class="mt-3 font-semibold">15 Sept • 10:00 AM</p>
+                </div>
+            </div>
+
+            <div class="z-10 w-8 h-8 rounded-full bg-cyan-400 border-4 border-white shadow-xl"></div>
+
+            <div class="w-5/12"></div>
+
+        </div>
+
+        <!-- Event 2 -->
+        <div class="mb-16 flex justify-between items-center w-full">
+
+            <div class="w-5/12"></div>
+
+            <div class="z-10 w-8 h-8 rounded-full bg-cyan-400 border-4 border-white shadow-xl"></div>
+
+            <div class="w-5/12">
+                <div class="bg-white/10 border border-cyan-400 rounded-2xl p-6 hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold text-cyan-300">🤖 AI Workshop</h3>
+                    <p class="mt-2 text-gray-300">Generative AI & Machine Learning</p>
+                    <p class="mt-3 font-semibold">15 Sept • 11:30 AM</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Event 3 -->
+
+        <div class="mb-16 flex justify-between items-center w-full">
+
+            <div class="w-5/12 text-right">
+                <div class="bg-white/10 border border-cyan-400 rounded-2xl p-6 hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold text-cyan-300">💻 Coding Contest</h3>
+                    <p class="mt-2 text-gray-300">Competitive Programming Challenge</p>
+                    <p class="mt-3 font-semibold">15 Sept • 1:00 PM</p>
+                </div>
+            </div>
+
+            <div class="z-10 w-8 h-8 rounded-full bg-cyan-400 border-4 border-white shadow-xl"></div>
+
+            <div class="w-5/12"></div>
+
+        </div>
+
+        <!-- Event 4 -->
+
+        <div class="mb-16 flex justify-between items-center w-full">
+
+            <div class="w-5/12"></div>
+
+            <div class="z-10 w-8 h-8 rounded-full bg-cyan-400 border-4 border-white shadow-xl"></div>
+
+            <div class="w-5/12">
+                <div class="bg-white/10 border border-cyan-400 rounded-2xl p-6 hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold text-cyan-300">⚙ Robotics Challenge</h3>
+                    <p class="mt-2 text-gray-300">Autonomous Robot Competition</p>
+                    <p class="mt-3 font-semibold">15 Sept • 2:30 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Event 5 -->
+
+        <div class="mb-16 flex justify-between items-center w-full">
+
+            <div class="w-5/12 text-right">
+                <div class="bg-white/10 border border-cyan-400 rounded-2xl p-6 hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold text-cyan-300">🚀 Hackathon Begins</h3>
+                    <p class="mt-2 text-gray-300">24-Hour Innovation Challenge</p>
+                    <p class="mt-3 font-semibold">15 Sept • 4:00 PM</p>
+                </div>
+            </div>
+
+            <div class="z-10 w-8 h-8 rounded-full bg-cyan-400 border-4 border-white shadow-xl"></div>
+
+            <div class="w-5/12"></div>
+
+        </div>
+
+        <!-- Event 6 -->
+
+        <div class="mb-16 flex justify-between items-center w-full">
+
+            <div class="w-5/12"></div>
+
+            <div class="z-10 w-8 h-8 rounded-full bg-cyan-400 border-4 border-white shadow-xl"></div>
+
+            <div class="w-5/12">
+                <div class="bg-white/10 border border-cyan-400 rounded-2xl p-6 hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold text-cyan-300">🏆 Prize Distribution</h3>
+                    <p class="mt-2 text-gray-300">Closing Ceremony & Awards</p>
+                    <p class="mt-3 font-semibold">16 Sept • 5:00 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Event Schedule Roadmap -->
+
+<!-- Paste the code below here -->
+
+<!-- Footer -->
+
+<footer class="bg-black/40 border-t border-cyan-500 py-8 text-center">
+
+<h2 class="text-3xl font-bold text-cyan-300">
+TECHFEST 2026
+</h2>
+
+<p class="mt-4 text-gray-300">
+"Where Innovation Meets Excellence"
+</p>
+
+<p class="mt-2 text-gray-400">
+Department of CSE(AI&ML)
+</p>
+<p class="mt-2 text-gray-400">
+SB Jain college of Engineering And Managemant
+</p>
+
+
+<p class="mt-6 text-gray-500">
+sbjit.edu.in
+</p>
+
+</footer>
+
+</body>
+</html>
