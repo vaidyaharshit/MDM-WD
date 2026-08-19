@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-5
+                flex flex-col gap-4
+                md:flex-row md:items-center md:justify-between">
+
+      <h1 class="text-2xl font-bold text-indigo-600">
+        NovaStore
+      </h1>
+
+      <nav class="flex flex-wrap gap-5 text-gray-600">
+        <a href="#" class="hover:text-indigo-600">Home</a>
+        <a href="#" class="hover:text-indigo-600">Products</a>
+        <a href="#" class="hover:text-indigo-600">About</a>
+        <a href="#" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-16
+                flex flex-col items-center text-center
+                md:flex-row md:text-left md:justify-between">
+
+      <div class="md:w-1/2">
+        <p class="uppercase tracking-widest text-indigo-200 font-semibold">
+          New Collection
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold mt-3">
+          Discover Your Next Favorite
+        </h2>
+
+        <p class="mt-5 text-indigo-100 text-lg">
+          Explore our latest collection of stylish, modern and
+          high-quality products designed for everyday life.
+        </p>
+
+        <button class="mt-7 bg-white text-indigo-600
+                       px-6 py-3 rounded-lg font-semibold
+                       hover:bg-gray-100 transition">
+          Shop Now
+        </button>
+      </div>
+
+      <div class="mt-10 md:mt-0 md:w-2/5">
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+          alt="Featured Product"
+          class="rounded-2xl shadow-2xl w-full h-72 object-cover">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Products -->
+  <section class="max-w-7xl mx-auto px-6 py-14">
+
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold">
+        Featured Products
+      </h2>
+
+      <p class="text-gray-500 mt-2">
+        Check out our latest products
+      </p>
+    </div>
+
+
+    <!-- Flexbox Product Container -->
+    <div class="flex flex-col gap-8
+                sm:flex-row sm:flex-wrap
+                lg:flex-nowrap">
+
+      <!-- Product 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden
+                  flex-1 min-w-0
+                  hover:shadow-xl transition">
+
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+          alt="Smart Watch"
+          class="w-full h-56 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Smart Watch</h3>
+
+          <p class="text-gray-500 mt-2">
+            Track your fitness and stay connected.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+            <span class="text-xl font-bold text-indigo-600">
+              ₹4,999
+            </span>
+
+            <button class="bg-indigo-600 text-white
+                           px-4 py-2 rounded-lg
+                           hover:bg-indigo-700">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Product 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden
+                  flex-1 min-w-0
+                  hover:shadow-xl transition">
+
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+          alt="Headphones"
+          class="w-full h-56 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Wireless Headphones</h3>
+
+          <p class="text-gray-500 mt-2">
+            Premium sound with powerful noise cancellation.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+            <span class="text-xl font-bold text-indigo-600">
+              ₹3,499
+            </span>
+
+            <button class="bg-indigo-600 text-white
+                           px-4 py-2 rounded-lg
+                           hover:bg-indigo-700">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Product 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden
+                  flex-1 min-w-0
+                  hover:shadow-xl transition">
+
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+          alt="Sneakers"
+          class="w-full h-56 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Sport Sneakers</h3>
+
+          <p class="text-gray-500 mt-2">
+            Lightweight and comfortable for everyday use.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+            <span class="text-xl font-bold text-indigo-600">
+              ₹2,799
+            </span>
+
+            <button class="bg-indigo-600 text-white
+                           px-4 py-2 rounded-lg
+                           hover:bg-indigo-700">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-6">
+    <p>© 2026 NovaStore. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
