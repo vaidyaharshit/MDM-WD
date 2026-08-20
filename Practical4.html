@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Practical 4</title>
+  <style>
+    .modal,
+    .lightbox,
+    .gallery-modal {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-content,
+    .lightbox-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      padding: 40px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .modal img,
+    .lightbox img,
+    .gallery-modal img {
+      display: block;
+      max-width: calc(100vw - 80px);
+      max-height: calc(100vh - 80px);
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      margin: auto;
+      background: transparent;
+    }
+
+    .modal img,
+    .lightbox img,
+    .gallery-modal img {
+      max-width: min(100vw - 80px, 100%);
+      max-height: min(100vh - 80px, 100%);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="position:fixed;top:8px;left:8px;color:#fff;z-index:10000;font-family:system-ui">Practical 4 — demo</h1>
+
+  <div class="modal" role="dialog" aria-label="Image lightbox">
+    <div class="modal-content">
+      <img src="https://via.placeholder.com/1200x800.png?text=Practical+4+Image" alt="Demo image">
+    </div>
+  </div>
+
+</body>
+</html>

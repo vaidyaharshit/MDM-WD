@@ -3,192 +3,538 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Showcase</title>
 
+  <title>NovaStore | New Collection</title>
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-50 text-gray-900">
 
-  <!-- Header -->
-  <header class="bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-6 py-5
-                flex flex-col gap-4
-                md:flex-row md:items-center md:justify-between">
+  <!-- ================= NAVBAR ================= -->
+  <nav class="bg-white border-b sticky top-0 z-50">
 
-      <h1 class="text-2xl font-bold text-indigo-600">
-        NovaStore
-      </h1>
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
 
-      <nav class="flex flex-wrap gap-5 text-gray-600">
-        <a href="#" class="hover:text-indigo-600">Home</a>
-        <a href="#" class="hover:text-indigo-600">Products</a>
-        <a href="#" class="hover:text-indigo-600">About</a>
-        <a href="#" class="hover:text-indigo-600">Contact</a>
-      </nav>
+      <div class="flex flex-col sm:flex-row items-center justify-between py-4 gap-4">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 bg-black text-white rounded-lg
+                      flex items-center justify-center font-bold">
+            N
+          </div>
+
+          <h1 class="text-xl font-bold">
+            NovaStore
+          </h1>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex items-center gap-5 text-sm">
+
+          <a href="#" class="font-medium hover:text-gray-500">
+            Home
+          </a>
+
+          <a href="#collection" class="font-medium hover:text-gray-500">
+            Collection
+          </a>
+
+          <a href="#about" class="font-medium hover:text-gray-500">
+            About
+          </a>
+
+          <button
+            class="bg-black text-white px-4 py-2 rounded-lg
+                   hover:bg-gray-800 transition">
+            🛒 Cart
+          </button>
+
+        </div>
+
+      </div>
+
     </div>
-  </header>
+
+  </nav>
 
 
-  <!-- Hero Section -->
-  <section class="bg-indigo-600 text-white">
-    <div class="max-w-7xl mx-auto px-6 py-16
-                flex flex-col items-center text-center
-                md:flex-row md:text-left md:justify-between">
+  <!-- ================= HERO ================= -->
+  <section class="bg-white">
 
-      <div class="md:w-1/2">
-        <p class="uppercase tracking-widest text-indigo-200 font-semibold">
-          New Collection
+    <div
+      class="max-w-7xl mx-auto px-5 sm:px-8
+             py-14 sm:py-20
+             flex flex-col lg:flex-row
+             items-center gap-10"
+    >
+
+      <!-- Hero Text -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left">
+
+        <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">
+          New Collection 2026
         </p>
 
-        <h2 class="text-4xl md:text-5xl font-bold mt-3">
-          Discover Your Next Favorite
+        <h2
+          class="text-4xl sm:text-5xl lg:text-6xl
+                 font-bold leading-tight mt-3"
+        >
+          Simple.
+          <br>
+          Stylish.
+          <br>
+          Everyday.
         </h2>
 
-        <p class="mt-5 text-indigo-100 text-lg">
-          Explore our latest collection of stylish, modern and
-          high-quality products designed for everyday life.
+        <p class="mt-5 text-gray-600 max-w-lg mx-auto lg:mx-0">
+          Discover our latest collection designed for comfort,
+          style and everyday life.
         </p>
 
-        <button class="mt-7 bg-white text-indigo-600
-                       px-6 py-3 rounded-lg font-semibold
-                       hover:bg-gray-100 transition">
-          Shop Now
-        </button>
+        <a
+          href="#collection"
+          class="inline-block mt-7 bg-black text-white
+                 px-7 py-3 rounded-lg font-medium
+                 hover:bg-gray-800 transition"
+        >
+          Explore Collection →
+        </a>
+
       </div>
 
-      <div class="mt-10 md:mt-0 md:w-2/5">
+
+      <!-- Hero Image -->
+      <div class="w-full lg:w-1/2">
+
         <img
-          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
-          alt="Featured Product"
-          class="rounded-2xl shadow-2xl w-full h-72 object-cover">
+          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80"
+          alt="New Collection"
+          class="w-full h-72 sm:h-96 object-cover rounded-2xl"
+        >
+
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- Products -->
-  <section class="max-w-7xl mx-auto px-6 py-14">
+  <!-- ================= COLLECTION ================= -->
+  <main id="collection" class="max-w-7xl mx-auto px-5 sm:px-8 py-14">
 
-    <div class="text-center mb-10">
-      <h2 class="text-3xl font-bold">
-        Featured Products
+    <!-- Section Heading -->
+    <div
+      class="flex flex-col sm:flex-row
+             items-start sm:items-end
+             justify-between gap-4 mb-8"
+    >
+
+      <div>
+
+        <p class="text-sm text-gray-500 uppercase tracking-wider">
+          Our Products
+        </p>
+
+        <h2 class="text-3xl font-bold mt-1">
+          Featured Collection
+        </h2>
+
+      </div>
+
+      <p class="text-gray-500 text-sm">
+        6 products available
+      </p>
+
+    </div>
+
+
+    <!-- ================= PRODUCT FLEXBOX ================= -->
+
+    <div class="flex flex-wrap gap-6">
+
+
+      <!-- PRODUCT 1 -->
+      <article
+        class="w-full sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               bg-white rounded-2xl overflow-hidden
+               border hover:shadow-xl
+               transition duration-300"
+      >
+
+        <div class="relative">
+
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
+            alt="Classic Sneakers"
+            class="w-full h-64 object-cover"
+          >
+
+          <span
+            class="absolute top-4 left-4
+                   bg-white px-3 py-1 rounded-full
+                   text-xs font-semibold"
+          >
+            NEW
+          </span>
+
+        </div>
+
+        <div class="p-5">
+
+          <p class="text-xs text-gray-400 uppercase">
+            Footwear
+          </p>
+
+          <h3 class="text-lg font-bold mt-1">
+            Classic Sneakers
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Comfortable everyday sneakers with a modern design.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+
+            <span class="text-xl font-bold">
+              $49
+            </span>
+
+            <button
+              class="bg-black text-white px-4 py-2 rounded-lg
+                     text-sm hover:bg-gray-800 transition"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 2 -->
+      <article
+        class="w-full sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               bg-white rounded-2xl overflow-hidden
+               border hover:shadow-xl
+               transition duration-300"
+      >
+
+        <div class="relative">
+
+          <img
+            src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80"
+            alt="Casual Hoodie"
+            class="w-full h-64 object-cover"
+          >
+
+          <span
+            class="absolute top-4 left-4
+                   bg-black text-white px-3 py-1
+                   rounded-full text-xs font-semibold"
+          >
+            POPULAR
+          </span>
+
+        </div>
+
+        <div class="p-5">
+
+          <p class="text-xs text-gray-400 uppercase">
+            Clothing
+          </p>
+
+          <h3 class="text-lg font-bold mt-1">
+            Casual Hoodie
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Soft premium hoodie designed for everyday comfort.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+
+            <span class="text-xl font-bold">
+              $39
+            </span>
+
+            <button
+              class="bg-black text-white px-4 py-2 rounded-lg
+                     text-sm hover:bg-gray-800 transition"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 3 -->
+      <article
+        class="w-full sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               bg-white rounded-2xl overflow-hidden
+               border hover:shadow-xl
+               transition duration-300"
+      >
+
+        <div>
+
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
+            alt="Smart Watch"
+            class="w-full h-64 object-cover"
+          >
+
+        </div>
+
+        <div class="p-5">
+
+          <p class="text-xs text-gray-400 uppercase">
+            Accessories
+          </p>
+
+          <h3 class="text-lg font-bold mt-1">
+            Smart Watch
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Stay connected and track your daily activities.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+
+            <span class="text-xl font-bold">
+              $79
+            </span>
+
+            <button
+              class="bg-black text-white px-4 py-2 rounded-lg
+                     text-sm hover:bg-gray-800 transition"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 4 -->
+      <article
+        class="w-full sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               bg-white rounded-2xl overflow-hidden
+               border hover:shadow-xl
+               transition duration-300"
+      >
+
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+          alt="Wireless Headphones"
+          class="w-full h-64 object-cover"
+        >
+
+        <div class="p-5">
+
+          <p class="text-xs text-gray-400 uppercase">
+            Electronics
+          </p>
+
+          <h3 class="text-lg font-bold mt-1">
+            Wireless Headphones
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Clear audio with comfortable wireless performance.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+
+            <span class="text-xl font-bold">
+              $59
+            </span>
+
+            <button
+              class="bg-black text-white px-4 py-2 rounded-lg
+                     text-sm hover:bg-gray-800 transition"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 5 -->
+      <article
+        class="w-full sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               bg-white rounded-2xl overflow-hidden
+               border hover:shadow-xl
+               transition duration-300"
+      >
+
+        <img
+          src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+          alt="Travel Backpack"
+          class="w-full h-64 object-cover"
+        >
+
+        <div class="p-5">
+
+          <p class="text-xs text-gray-400 uppercase">
+            Bags
+          </p>
+
+          <h3 class="text-lg font-bold mt-1">
+            Travel Backpack
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Spacious and durable backpack for everyday adventures.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+
+            <span class="text-xl font-bold">
+              $45
+            </span>
+
+            <button
+              class="bg-black text-white px-4 py-2 rounded-lg
+                     text-sm hover:bg-gray-800 transition"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 6 -->
+      <article
+        class="w-full sm:w-[calc(50%-12px)]
+               lg:w-[calc(33.333%-16px)]
+               bg-white rounded-2xl overflow-hidden
+               border hover:shadow-xl
+               transition duration-300"
+      >
+
+        <img
+          src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
+          alt="Minimalist Sunglasses"
+          class="w-full h-64 object-cover"
+        >
+
+        <div class="p-5">
+
+          <p class="text-xs text-gray-400 uppercase">
+            Accessories
+          </p>
+
+          <h3 class="text-lg font-bold mt-1">
+            Minimalist Sunglasses
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2">
+            Simple and stylish sunglasses for a modern look.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+
+            <span class="text-xl font-bold">
+              $29
+            </span>
+
+            <button
+              class="bg-black text-white px-4 py-2 rounded-lg
+                     text-sm hover:bg-gray-800 transition"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="bg-white border-t">
+
+    <div
+      class="max-w-7xl mx-auto px-5 sm:px-8
+             py-14 text-center"
+    >
+
+      <p class="text-sm text-gray-500 uppercase tracking-wider">
+        About Us
+      </p>
+
+      <h2 class="text-3xl font-bold mt-2">
+        Made for Everyday Life
       </h2>
 
-      <p class="text-gray-500 mt-2">
-        Check out our latest products
+      <p class="max-w-2xl mx-auto text-gray-600 mt-4">
+        NovaStore brings together simple, useful and stylish products
+        designed to make everyday life a little better.
       </p>
-    </div>
-
-
-    <!-- Flexbox Product Container -->
-    <div class="flex flex-col gap-8
-                sm:flex-row sm:flex-wrap
-                lg:flex-nowrap">
-
-      <!-- Product 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden
-                  flex-1 min-w-0
-                  hover:shadow-xl transition">
-
-        <img
-          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
-          alt="Smart Watch"
-          class="w-full h-56 object-cover">
-
-        <div class="p-6">
-          <h3 class="text-xl font-bold">Smart Watch</h3>
-
-          <p class="text-gray-500 mt-2">
-            Track your fitness and stay connected.
-          </p>
-
-          <div class="flex items-center justify-between mt-5">
-            <span class="text-xl font-bold text-indigo-600">
-              ₹4,999
-            </span>
-
-            <button class="bg-indigo-600 text-white
-                           px-4 py-2 rounded-lg
-                           hover:bg-indigo-700">
-              Buy Now
-            </button>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Product 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden
-                  flex-1 min-w-0
-                  hover:shadow-xl transition">
-
-        <img
-          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
-          alt="Headphones"
-          class="w-full h-56 object-cover">
-
-        <div class="p-6">
-          <h3 class="text-xl font-bold">Wireless Headphones</h3>
-
-          <p class="text-gray-500 mt-2">
-            Premium sound with powerful noise cancellation.
-          </p>
-
-          <div class="flex items-center justify-between mt-5">
-            <span class="text-xl font-bold text-indigo-600">
-              ₹3,499
-            </span>
-
-            <button class="bg-indigo-600 text-white
-                           px-4 py-2 rounded-lg
-                           hover:bg-indigo-700">
-              Buy Now
-            </button>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Product 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden
-                  flex-1 min-w-0
-                  hover:shadow-xl transition">
-
-        <img
-          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
-          alt="Sneakers"
-          class="w-full h-56 object-cover">
-
-        <div class="p-6">
-          <h3 class="text-xl font-bold">Sport Sneakers</h3>
-
-          <p class="text-gray-500 mt-2">
-            Lightweight and comfortable for everyday use.
-          </p>
-
-          <div class="flex items-center justify-between mt-5">
-            <span class="text-xl font-bold text-indigo-600">
-              ₹2,799
-            </span>
-
-            <button class="bg-indigo-600 text-white
-                           px-4 py-2 rounded-lg
-                           hover:bg-indigo-700">
-              Buy Now
-            </button>
-          </div>
-        </div>
-      </div>
 
     </div>
+
   </section>
 
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 text-center py-6">
-    <p>© 2026 NovaStore. All rights reserved.</p>
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-black text-white">
+
+    <div
+      class="max-w-7xl mx-auto px-5 sm:px-8
+             py-8
+             flex flex-col sm:flex-row
+             items-center justify-between
+             gap-4"
+    >
+
+      <div>
+        <h3 class="font-bold text-lg">
+          NovaStore
+        </h3>
+
+        <p class="text-gray-400 text-sm mt-1">
+          Simple products. Better everyday.
+        </p>
+      </div>
+
+      <p class="text-gray-400 text-sm">
+        © 2026 NovaStore. All rights reserved.
+      </p>
+
+    </div>
+
   </footer>
 
 </body>
